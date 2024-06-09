@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Example Tutorial
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- Creation of the form for fetching the user data -->
+	<h1><center>Assignment-1 Javascript CRUD example</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault()" autocomplete="off" id = "emplo">
+                    <div>
+                        <label>User Id</label>
+                        <input type="text" name="userId" id="userId">
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="yourName" id="yourName">
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                    <div>
+                        <label>ContactNum</label>
+                        <input type = "text" name = "contactNum" id = "contactNum">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+        <!-- Creation of the heading where data will be getting stored  -->
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>User Id</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Country</th>
+                            <th>Contact num</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <!-- Here the data will be stored  -->
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
